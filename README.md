@@ -41,3 +41,4 @@ providers wisely.
 * Temporary databases are not dropped when validation fails. Use a Postgres management tool
   like e.g. pgAdmin to clean up from time to time.
 * Mainnet validation consumes 4.5 GiB of memory on Linux because all transactions are kept in memory
+* If you encounter the message `createdb: command not found`, this is due to the way Lisk installs PostgreSQL. It can be fixed by running `sudo apt install postgresql` (or the equivalent for other package managers).
